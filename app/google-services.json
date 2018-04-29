@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "971342251326",
+    "firebase_url": "https://sayur-mas-jamal.firebaseio.com",
+    "project_id": "sayur-mas-jamal",
+    "storage_bucket": "sayur-mas-jamal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971342251326:android:9e5cab13a3b0e753",
+        "android_client_info": {
+          "package_name": "com.proyek.rahmanjai.sayurmasjamal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971342251326-na1tosntrhpfg97bagmfomgb5hn7e12i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyek.rahmanjai.sayurmasjamal",
+            "certificate_hash": "d9f01be50b081e3062f7f7a16617b7199c4483fd"
+          }
+        },
+        {
+          "client_id": "971342251326-tnsv47rk38cgrdcfjmub2sl3shier5f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV33XyRjQiT2YgeKg9DGl4XKmamthnGiA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971342251326-tnsv47rk38cgrdcfjmub2sl3shier5f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971342251326:android:4bd0aafcfcdc8691",
+        "android_client_info": {
+          "package_name": "com.proyek.rahmanjai.servermasjamal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971342251326-o4rfk5p3ifqggckvoqtrbr5cej5sbsor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyek.rahmanjai.servermasjamal",
+            "certificate_hash": "d9f01be50b081e3062f7f7a16617b7199c4483fd"
+          }
+        },
+        {
+          "client_id": "971342251326-tnsv47rk38cgrdcfjmub2sl3shier5f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV33XyRjQiT2YgeKg9DGl4XKmamthnGiA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971342251326-tnsv47rk38cgrdcfjmub2sl3shier5f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
