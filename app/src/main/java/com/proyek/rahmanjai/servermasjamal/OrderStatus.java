@@ -1,6 +1,7 @@
 package com.proyek.rahmanjai.servermasjamal;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import android.view.View;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.internal.InternalTokenProvider;
 import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.proyek.rahmanjai.servermasjamal.Common.Common;
 import com.proyek.rahmanjai.servermasjamal.Interface.ItemClickListener;
@@ -57,7 +59,7 @@ public class OrderStatus extends AppCompatActivity {
                 requests
         ) {
             @Override
-            protected void populateViewHolder(OrderViewHolder viewHolder, Request model, int position) {
+            protected void populateViewHolder(OrderViewHolder viewHolder, final Request model, int position) {
                 viewHolder.txtOrderId.setText(adapter.getRef(position).getKey());
                 viewHolder.txtOrderStatus.setText(Common.convertCodeToStatus(model.getStatus()));
                 viewHolder.txtOrderAddres.setText(model.getAddress());
@@ -66,7 +68,9 @@ public class OrderStatus extends AppCompatActivity {
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClik) {
-                        // Diimplementasikan hanta untuk menghindari Crash
+                        Intent trackingOrder = new Intent(OrderStatus.this, TrackingOrder.class);
+                        Common.currentRequest = model;
+                        startActivity(trackingOrder);
                     }
                 });
             }
@@ -97,7 +101,7 @@ public class OrderStatus extends AppCompatActivity {
         final View view = inflater.inflate(R.layout.update_order_layout, null);
 
         spinner = view.findViewById(R.id.statusSpinner);
-        spinner.setItems("Placed", "On My Way", "Shipped");
+        spinner.setItems("Ditaruh dalam Keranjang", "Sedang dalam Pengiriman", "Sudah Di Antar");
 
         alertDialog.setView(view);
 

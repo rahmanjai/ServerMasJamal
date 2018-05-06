@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignIn;
-    TextView txtSlogan;
+    TextView txtSlogan, txtJudul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignIn = findViewById(R.id.btnSignIn);
         txtSlogan = findViewById(R.id.txtSlogan);
+        txtJudul = findViewById(R.id.txtJudul);
         Typeface face = Typeface.createFromAsset(getAssets(), "fonts/NABILA.TTF");
         txtSlogan.setTypeface(face);
+        txtJudul.setTypeface(face);
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override

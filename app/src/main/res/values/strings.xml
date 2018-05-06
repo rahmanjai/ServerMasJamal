@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Server Mas Jamal</string>
-    <string name="app_slogan">Kami mengatar ke pelanggan dengan cepat dan tepat.</string>
+    <string name="app_slogan">Untuk mengelola sayur, buah dan ikan yang inign di tambah atau di hapus dari daftar juga mengelola Orderan dari pelanggan</string>
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,4 +8,5 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_tracking_order">TrackingOrder</string>
 </resources>
